@@ -197,21 +197,21 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnRegistrar;
-    private javax.swing.JComboBox<String> cbxEdad;
-    private javax.swing.JComboBox<String> cbxGenero;
-    private javax.swing.JLabel lblApellido;
-    private javax.swing.JLabel lblConfirmPass;
-    private javax.swing.JLabel lblEdad;
-    private javax.swing.JLabel lblGenero;
-    private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblPassword;
-    private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblUsername;
-    private javax.swing.JTextField txtApellido;
-    private javax.swing.JPasswordField txtConfirmPass;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtPassword;
-    private javax.swing.JTextField txtUsername;
+    public javax.swing.JButton btnRegistrar;
+    public javax.swing.JComboBox<String> cbxEdad;
+    public javax.swing.JComboBox<String> cbxGenero;
+    public javax.swing.JLabel lblApellido;
+    public javax.swing.JLabel lblConfirmPass;
+    public javax.swing.JLabel lblEdad;
+    public javax.swing.JLabel lblGenero;
+    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblPassword;
+    public javax.swing.JLabel lblTitulo;
+    public javax.swing.JLabel lblUsername;
+    public javax.swing.JTextField txtApellido;
+    public javax.swing.JPasswordField txtConfirmPass;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtPassword;
+    public javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }
