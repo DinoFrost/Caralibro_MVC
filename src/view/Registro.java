@@ -43,6 +43,7 @@ public class Registro extends javax.swing.JFrame {
         lblGenero = new javax.swing.JLabel();
         cbxGenero = new javax.swing.JComboBox<>();
         btnRegistrar = new javax.swing.JButton();
+        lblVolver = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,6 +64,8 @@ public class Registro extends javax.swing.JFrame {
         lblUsername.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         lblUsername.setText("Nombre de usuario:");
 
+        txtUsername.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+
         lblPassword.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         lblPassword.setText("Contraseña:");
 
@@ -70,6 +73,8 @@ public class Registro extends javax.swing.JFrame {
 
         lblConfirmPass.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         lblConfirmPass.setText("Confirme su contraseña:");
+
+        txtConfirmPass.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
 
         lblEdad.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         lblEdad.setText("Edad:");
@@ -86,6 +91,9 @@ public class Registro extends javax.swing.JFrame {
         btnRegistrar.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         btnRegistrar.setText("Registrarse");
 
+        lblVolver.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        lblVolver.setText("Volver");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -95,30 +103,33 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblNombre)
-                            .addComponent(lblApellido)
-                            .addComponent(lblUsername)
-                            .addComponent(lblPassword)
-                            .addComponent(lblConfirmPass)
-                            .addComponent(lblEdad)
-                            .addComponent(lblGenero))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtApellido)
-                            .addComponent(txtUsername)
-                            .addComponent(txtPassword)
-                            .addComponent(txtConfirmPass)
-                            .addComponent(cbxEdad, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cbxGenero, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnRegistrar)
-                .addGap(67, 67, 67))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblNombre)
+                                    .addComponent(lblApellido)
+                                    .addComponent(lblUsername)
+                                    .addComponent(lblPassword)
+                                    .addComponent(lblConfirmPass)
+                                    .addComponent(lblEdad)
+                                    .addComponent(lblGenero))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtApellido)
+                                    .addComponent(txtUsername)
+                                    .addComponent(txtPassword)
+                                    .addComponent(txtConfirmPass)
+                                    .addComponent(cbxEdad, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(cbxGenero, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(lblVolver)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRegistrar)
+                        .addGap(69, 69, 69))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,7 +165,9 @@ public class Registro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cbxGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(btnRegistrar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegistrar)
+                    .addComponent(lblVolver))
                 .addContainerGap())
         );
 
@@ -172,7 +185,7 @@ public class Registro extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -208,6 +221,7 @@ public class Registro extends javax.swing.JFrame {
     public javax.swing.JLabel lblPassword;
     public javax.swing.JLabel lblTitulo;
     public javax.swing.JLabel lblUsername;
+    public javax.swing.JLabel lblVolver;
     public javax.swing.JTextField txtApellido;
     public javax.swing.JPasswordField txtConfirmPass;
     public javax.swing.JTextField txtNombre;

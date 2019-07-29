@@ -113,7 +113,7 @@ public class Login extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -138,12 +138,12 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnEntrar;
-    private javax.swing.JLabel lblContraseña;
-    private javax.swing.JLabel lblRegistro;
-    private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblUsuario;
-    private javax.swing.JPasswordField txtContra;
-    private javax.swing.JTextField txtUsuario;
+    public javax.swing.JButton btnEntrar;
+    public javax.swing.JLabel lblContraseña;
+    public javax.swing.JLabel lblRegistro;
+    public javax.swing.JLabel lblTitulo;
+    public javax.swing.JLabel lblUsuario;
+    public javax.swing.JPasswordField txtContra;
+    public javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
